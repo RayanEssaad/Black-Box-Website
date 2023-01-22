@@ -6,3 +6,43 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+div.demo-star {
+  position: relative; 
+  display: block;
+  color: #2762e9;
+  width: 0;
+  height: 0;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid #2762e9;
+  border-left: 100px solid transparent;
+  transform: rotate(35deg); 
+}
+
+div.demo-star:before {
+  border-bottom: 80px solid #2762e9;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  display: block;
+  content: ' ';
+  transform: rotate(-35deg);
+}
+
+div.demo-star:after {
+   position: absolute;
+   display: block;
+   color: #2762e9;
+   top: 3px;
+   left: -105px;
+   width: 0;
+   height: 0;
+   border-right: 100px solid transparent;
+   border-bottom: 70px solid #2762e9;
+   border-left: 100px solid transparent;
+   transform: rotate(-70deg);
+   content: ' ';
+}
